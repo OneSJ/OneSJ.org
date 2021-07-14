@@ -1,0 +1,70 @@
+/* Basic styling for all navbar elements */
+.navigationBar {
+  font: 1rem montserrat;
+  font-weight: 300;
+  background-color: var(--darkTeal);
+  opacity: 0.95;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  width: 100%;
+}
+
+.navigationBar .navbar-brand {
+  color: white;
+  font-weight: 900;
+}
+
+.navigationBar .navbar-nav .nav-link {
+  color: white;
+}
+
+.navigationBar .navbar-nav .nav-link.a {
+  color: white;
+}
+
+.navigationBar .navbar-nav .nav-link.active {
+  color: var(--brightYellow);
+}
+
+/* Highlight icons on hover */
+.navigationBar .nav-link:hover .MuiSvgIcon-root {
+  color: var(--darkYellow);
+}
+
+.navigationBar .navbar-brand:hover {
+  color: var(--darkYellow);
+}
+
+.navigationBar .navbar-nav .nav-item.show .nav-link {
+  color: var(--darkYellow);
+}
+
+.navigationBar .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.navigationBar .navbar-nav .nav-link:hover {
+  color: var(--darkYellow);
+}
+
+.navigationBar .navbar-nav .nav-link.active:hover {
+  color: var(--darkYellow);
+}
+
+/* Navigation toggler css for mobile view */
+.navbar-toggler {
+  font-size: 1rem;
+  background-color: white;
+  margin: 0 1rem;
+}
+
+.navbar-toggler:hover {
+  background-color: var(--darkYellow);
+}
+
+@media (min-width: 768px) {
+  /* Keeps Internationalization button on right */
+  .navbar-collapse {
+    order: 0;
+  }
+}

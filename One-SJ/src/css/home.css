@@ -1,0 +1,70 @@
+/* Styling for all the buttons on the home page (FAB = Floating Action Button) */
+.MuiFab-label {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.MuiFab-label .MuiSvgIcon-root {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.MuiFab-root:hover .MuiFab-label {
+  color: var(--darkYellow);
+}
+
+.infoBox {
+  background-color: rgba(254, 215, 1, 0.1);
+  border-radius: 15px;
+  border: 2px solid var(--darkTeal);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 3rem;
+  margin: 1rem;
+  width: 90%;
+}
+
+/* Styling for the Information Banner */
+.center .informationBanner {
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5rem;
+  padding: 10rem 0;
+}
+
+/* Styling for images on home page */
+img.home {
+  max-width: 65%;
+  margin: 1rem;
+}
+
+/* Styling for the Welcome Banner */
+.center .welcomeBanner {
+  width: 75%;
+}
+
+.center .welcomeBannerButtonsContainer {
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1200px) {
+  .center .informationBanner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .center .welcomeBannerButtonsContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .infoBox {
+    margin: 0.5rem;
+  }
+  .center .welcomeBanner {
+    width: 100%;
+  }
+}

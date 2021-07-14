@@ -1,0 +1,22 @@
+/* Styling for all snacks */
+.snack .MuiSnackbarContent-root {
+  font: 0.9rem montserrat;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.snack:hover .MuiSnackbarContent-root {
+  color: var(--darkYellow);
+}
+
+@media (max-width: 600px) {
+  .MuiSnackbar-root.snack {
+    justify-content: center;
+  }
+  .snack .MuiSnackbarContent-root {
+    flex-grow: 0;
+    width: 75%;
+  }
+}

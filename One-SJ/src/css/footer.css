@@ -1,0 +1,31 @@
+.footerContainer {
+  background-color: var(--darkTeal);
+  opacity: 0.95;
+  height: 50vh;
+}
+
+.center .footerBrandContainer {
+  grid-template-columns: 1fr 1fr;
+}
+
+.center .footerLinksContainer {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+img.footer {
+  max-width: 100px;
+  border-radius: 15px;
+}
+
+hr.footer {
+  border-top: 5px solid var(--brightYellow);
+  opacity: 0.7;
+  width: 50%;
+}
+
+span.footer {
+  color: white;
+  font: 0.75rem montserrat;
+  text-align: center;
+}

@@ -1,0 +1,107 @@
+/* All base styling for the application goes here. Bootstrap and Material UI (MUI) is seen 
+   commonly throughout the rest of this application's CSS */
+
+/* Color variables */
+:root {
+  --darkTeal: rgb(0, 127, 127);
+  --lightTeal: rgb(0, 150, 140);
+  --neutral: rgb(250, 250, 210);
+  --brightYellow: rgb(255, 236, 69);
+  --neutralYellow: rgb(255, 255, 230);
+  --darkYellow: rgb(219, 165, 34);
+}
+
+a {
+  color: white;
+  text-align: center;
+}
+
+a:hover {
+  color: var(--darkYellow);
+}
+
+span {
+  text-align: center;
+}
+
+h1 {
+  font: 6rem montserrat;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  cursor: default;
+  text-shadow: 5px 5px 0px rgba(255, 255, 255, 0.2);
+}
+
+h3 {
+  font: 1.75rem montserrat;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  cursor: default;
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+  font: 1.5rem montserrat;
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  font: 1.5rem montserrat;
+  text-align: center;
+  line-height: 1.6;
+}
+
+hr {
+  border-top: 5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  width: 75%;
+}
+
+li {
+  text-align: left;
+}
+
+.textShadow {
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.boxShadow {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.bgGradientTop {
+  background: linear-gradient(to bottom, var(--lightTeal), var(--neutral));
+}
+
+.bgGradientBottom {
+  background: linear-gradient(to top, var(--lightTeal), var(--neutral));
+}
+
+.center {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  place-items: center;
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 85%;
+  }
+  .center {
+    gap: 0.5rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  hr {
+    width: 100%;
+  }
+}

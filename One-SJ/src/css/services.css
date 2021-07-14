@@ -1,0 +1,273 @@
+.servicesLayout {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: start;
+  justify-items: center;
+  background-color: var(--neutral);
+  padding-top: 5rem;
+}
+
+.filterBox {
+  width: 90%;
+  background-color: var(--neutralYellow);
+  border-radius: 15px;
+  border: 2px solid var(--darkTeal);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.searchBar.MuiInputBase-root {
+  width: 25rem;
+  color: var(--darkTeal);
+  background-color: white;
+  border: 2px solid var(--darkTeal);
+  border-radius: 10px;
+  font: 1.25rem montserrat;
+  font-weight: 700;
+  padding: 0.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.pageSizeHandler {
+  width: 80%;
+  font: 1rem montserrat;
+  font-weight: 500;
+  text-align: center;
+  margin: auto auto;
+}
+
+h4.services {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+span.servicesShown {
+  font: 2rem montserrat;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem;
+  color: var(--darkTeal);
+}
+
+/* Controls styling for all the filter checkboxes */
+.filter {
+  align-content: center;
+}
+
+.filter .MuiFormControlLabel-root {
+  margin: 0.25rem;
+}
+
+.filter .MuiFormControlLabel-root:hover .MuiTypography-root {
+  color: var(--darkTeal);
+}
+
+.filter .MuiFormControlLabel-root:hover .MuiSvgIcon-root {
+  color: var(--darkTeal);
+}
+
+.filter .MuiSvgIcon-root {
+  color: black;
+}
+
+.filter .MuiButtonBase-root:hover .MuiSvgIcon-root {
+  color: var(--darkTeal);
+}
+
+.filter .Mui-checked .MuiSvgIcon-root {
+  color: var(--darkTeal);
+}
+
+.filter .Mui-checked + .MuiTypography-root {
+  color: var(--darkTeal);
+}
+
+.categoryLabel .MuiTypography-root {
+  text-align: left;
+}
+
+/* Styling for the anchors having to do with data */
+a.data {
+  color: var(--darkYellow);
+}
+
+a.data:hover {
+  color: var(--darkTeal);
+}
+
+/* Controls styling for cards */
+:root {
+  --card-size: 20rem;
+}
+
+.card-deck {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, var(--card-size));
+  gap: 2rem;
+  justify-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card.data {
+  width: var(--card-size);
+  cursor: pointer;
+  text-align: center;
+  font: 1rem montserrat;
+}
+
+.card-header {
+  background-color: var(--lightTeal);
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.card-body {
+  background-color: var(--neutralYellow);
+  color: var(--darkTeal);
+  align-items: start;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Controls styling for the modals */
+.modal-header {
+  background-color: var(--lightTeal);
+}
+
+.modal-header button.close {
+  color: white;
+}
+
+.modal-header button.close:hover {
+  color: var(--darkYellow);
+}
+
+.modal-title {
+  width: 100%;
+  text-align: center;
+  font: 2rem montserrat;
+  font-weight: 700;
+  color: white;
+}
+
+.modal-body {
+  background-color: var(--neutralYellow);
+  color: var(--darkTeal);
+  font: 1.5rem montserrat;
+  font-weight: 300;
+  text-align: center;
+}
+
+.modal-footer {
+  background-color: var(--lightTeal);
+}
+
+.modalFooterCloseButton {
+  color: black;
+  background-color: white;
+}
+
+.modalFooterCloseButton:hover {
+  background-color: var(--darkYellow);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --card-size: 15rem;
+  }
+  .servicesLayout {
+    grid-template-columns: 30% 70%;
+  }
+  .searchBar.MuiInputBase-root {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .servicesLayout {
+    grid-template-columns: 40% 60%;
+  }
+  span.servicesShown {
+    font: 1.5rem montserrat;
+    font-weight: 700;
+  }
+  .searchBar.MuiInputBase-root {
+    width: 15rem;
+    font-size: 1rem;
+  }
+  /* Card changes */
+  .card-header {
+    font-size: 1rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.75rem;
+  }
+  /* Pagination changes */
+  .page-link {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --card-size: 10rem;
+  }
+  .servicesLayout {
+    grid-template-columns: 45% 55%;
+  }
+  span.servicesShown {
+    font: 1.25rem montserrat;
+    font-weight: 700;
+  }
+  .searchBar.MuiInputBase-root {
+    width: 10rem;
+    font-size: 0.75rem;
+  }
+  /* Filter box changes */
+  .pageSizeHandler {
+    font-size: 0.75rem;
+  }
+  h4.services {
+    font-size: 1.25rem;
+  }
+  .filter .MuiFormControlLabel-root .MuiTypography-body1 {
+    font: 0.75rem montserrat;
+  }
+  .filter .MuiSvgIcon-root {
+    font-size: 1rem;
+  }
+  /* Card changes */
+  .card-header {
+    font-size: 0.75rem;
+  }
+  .card-title {
+    font-size: 0.75rem;
+  }
+  .card-text {
+    font-size: 0.6rem;
+    padding: 0.5rem;
+  }
+  /* Pagination changes */
+  .page-link {
+    padding: 0.25rem 0.35rem;
+    font-size: 0.45rem;
+  }
+}

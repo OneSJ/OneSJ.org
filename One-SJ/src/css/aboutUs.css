@@ -1,0 +1,69 @@
+a.aboutUs {
+  color: var(--darkTeal);
+}
+
+a.aboutUs:hover {
+  color: var(--darkYellow);
+}
+
+.aboutUsParagraphContainer {
+  padding: 5rem 0 0 0;
+  width: 60%;
+}
+
+.meetTheTeamContainer {
+  width: 60%;
+  margin-bottom: 5rem;
+}
+
+/* Styling for all the biography cards */
+.center .bioCardsContainer {
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.MuiCard-root.bioCard {
+  height: 25rem;
+  width: 20rem;
+  background-color: var(--neutral);
+  opacity: 0.9;
+  border-radius: 1rem;
+  gap: 0;
+}
+
+/* Styling for the avatar within the biography cards */
+.MuiAvatar-root.bioCard {
+  width: 10rem;
+  height: 10rem;
+}
+
+h5.bioCard {
+  color: var(--darkTeal);
+}
+
+/* Highlight when social button is hovered */
+.socialButton:hover > .MuiIconButton-label > .MuiSvgIcon-root {
+  color: var(--darkYellow);
+}
+
+/* Set default color and size of social button */
+.socialButton > .MuiIconButton-label > .MuiSvgIcon-root {
+  color: rgb(14, 118, 168);
+  font-size: 2rem;
+}
+
+@media (max-width: 550px) {
+  .aboutUsParagraphContainer {
+    width: 75%;
+  }
+  .meetTheTeamContainer {
+    width: 75%;
+  }
+}
+
+@media (max-width: 767px) {
+  .center .bioCardsContainer {
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+}

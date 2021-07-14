@@ -1,0 +1,10 @@
+.feedbackParagraphContainer {
+  padding: 5rem 0;
+  width: 60%;
+}
+
+@media (max-width: 550px) {
+  .feedbackParagraphContainer {
+    width: 75%;
+  }
+}

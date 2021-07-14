@@ -1,0 +1,15 @@
+{
+  "short_name": "OneSJ",
+  "name": "OneSJ",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "1650x1275",
+      "type": "image/svg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
