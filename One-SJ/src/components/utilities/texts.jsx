@@ -2,7 +2,7 @@
 // With the exception of the data pulled from the API
 
 // Navigation Bar Section
-export const home = "Home";
+export const home = "Homepage";
 export const services = "Services";
 export const aboutUs = "About Us";
 export const disclaimer = "Disclaimer";
@@ -40,14 +40,14 @@ export const moreInfoBannerParagraph1 =
   "On our website, we provide information on mental and physical health resources in and around the Bay Area, which is updated every month.";
 export const moreInfoBannerHeader2 = "LOOKING FOR OTHER RESOURCES?";
 export const moreInfoBannerParagraph2 =
-  "Other categories are in-progress!" +
+  "Other categories are in-progress! " +
   "We plan to eventually expand with other categories of services such as food, housing, and financial support. " +
   "We are working with our partners to bring together the best available and up-to-date information in an easy-to-use user interface.";
 // Find Services Button
 export const findServices = "Find Services";
 // Emergency Banner
 export const emergencyBannerHeader =
-  "If you are experiencing a crisis or have an emergency, please call 911.";
+  "If you are experiencing a crisis or have an emergency, please call 1-800-273-TALK.";
 export const emergencyBannerParagraph =
   "Many of the services listed on this website will not respond immediately. " +
   "If you or a loved one are experiencing suicidal thoughts, please call the National Suicide Prevention Lifeline. " +
