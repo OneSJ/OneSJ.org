@@ -127,7 +127,6 @@ a.data:hover {
 .card-body {
   background-color: var(--neutralYellow);
   color: var(--darkTeal);
-  align-items: start;
 }
 
 .card-title {

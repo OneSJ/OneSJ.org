@@ -78,7 +78,7 @@ const CardData = ({ data }) => {
         border={hovered ? "primary" : ""}
       >
         <Card.Header className="textShadow">{mentalHealthHeader}</Card.Header>
-        <Card.Body className="center">
+        <Card.Body>
           <Card.Title>{data.provider_name}</Card.Title>
           <Card.Text>{text}</Card.Text>
         </Card.Body>

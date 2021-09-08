@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getDataAndCategories } from "../../utilities/constants";
 import NavigationBar from "../../reusable/navigationBar";
 import InsuredSnack from "./insuredSnack";
+import Survey from "./survey";
 import ServicesShown from "./servicesShown";
 import SearchBar from "./searchBar";
 import PageSizeHandler from "./pageSizeHandler";
@@ -26,13 +27,13 @@ const Services = () => {
     pageSize: 12,
   });
 
-  useEffect(() => {
+  useEffect(async () => {
     // Check if user has already accessed services page through session storage
     const sessionData = sessionStorage.getItem("data");
     const sessionCategories = sessionStorage.getItem("categories");
 
     if (sessionData === null || sessionCategories === null) {
-      getDataAndCategories().then((response) => {
+      await getDataAndCategories().then((response) => {
         // Storing data and categories in session storage
         sessionStorage.setItem("data", JSON.stringify(response[0]));
         sessionStorage.setItem("categories", JSON.stringify(response[1]));
@@ -53,7 +54,7 @@ const Services = () => {
     }
   }, []);
 
-  // When there filtered data changes, check if there was a search in progress
+  // When the filtered data changes, check if there was a search in progress
   // If so, call handleSearch again to account for new filtered data
   useEffect(() => {
     if (state.searchInProgress) {
@@ -170,6 +171,8 @@ const Services = () => {
     <>
       <NavigationBar />
       <InsuredSnack />
+      {/* Check LocalStorage to see if the survey has been completed already */}
+      {localStorage.getItem("surveyCompleted") === null && <Survey />}
       <div className="servicesLayout">
         <ServicesShown
           currentPage={state.currentPage}

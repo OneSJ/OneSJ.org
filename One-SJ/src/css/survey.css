@@ -1,0 +1,63 @@
+p.rating {
+  font: 1.25rem montserrat;
+  font-weight: 600;
+  color: var(--lightTeal);
+}
+
+.MuiFormLabel-root.surveyLabel {
+  font: 1.5rem montserrat;
+  font-weight: 700;
+  color: var(--darkTeal);
+}
+
+.MuiFormLabel-root.Mui-focused.surveyLabel {
+  color: var(--darkteal);
+}
+
+.MuiFormGroup-root.surveyRadio {
+  font: 1rem montserrat;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+}
+
+/* Set Radio button color */
+.surveyRadio > .MuiFormControlLabel-root > .MuiButtonBase-root {
+  color: var(--darkTeal);
+}
+
+/* Set Radio Button Label color */
+.surveyRadio
+  > .MuiFormControlLabel-root
+  > .Mui-checked
+  + .MuiFormControlLabel-label {
+  color: var(--lightTeal);
+}
+
+/* Set Radio Button Label color on hovor */
+.surveyRadio > .MuiFormControlLabel-root:hover > .MuiFormControlLabel-label {
+  color: var(--darkTeal);
+}
+
+/* Left align Radio Button Labels */
+.surveyRadio > .MuiFormControlLabel-root > .MuiFormControlLabel-label {
+  text-align: left;
+}
+
+.surveyModal {
+  padding: 2rem;
+}
+
+.surveyTextArea.form-control {
+  height: 5rem;
+  color: var(--lightTeal);
+}
+
+.submitButton.MuiButtonBase-root {
+  float: right;
+  margin: 1rem;
+}
+
+.submitButtonIcon {
+  margin-left: 1rem;
+}

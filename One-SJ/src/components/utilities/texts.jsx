@@ -96,6 +96,40 @@ export const close = "Close";
 export const previous = "Previous";
 export const next = "Next";
 
+// Survey Section
+// Ratings
+export const halfRating = "Useless";
+export const oneRating = "Terrible";
+export const oneHalfRating = "Bad";
+export const twoRating = "Needs a lot of work";
+export const twoHalfRating = "Could be better";
+export const threeRating = "Okay";
+export const threeHalfRating = "Good";
+export const fourRating = "Great";
+export const fourHalfRating = "Amazing";
+export const fiveRating = "Perfect";
+// Survey Title
+export const surveyTitle = "Help us improve OneSJ!";
+// Survey visit text
+export const surveyRating = "How was your visit today?";
+// Were you able to find what you were looking for?
+export const ableToFindQuestion =
+  "Were you able to find what you were looking for?";
+export const ableToFindAnswer1 = "I didn't find any services right for me";
+export const ableToFindAnswer2 =
+  "I found a few good results, but I couldn't tell what I should choose";
+export const ableToFindAnswer3 = "I found exactly what I needed";
+// Would you recommend this to someone else?
+export const wouldRecommendQuestion =
+  "Would you recommend this to someone else?";
+export const wouldRecommendAnswer1 = "Yes";
+export const wouldRecommendAnswer2 = " No";
+// Survey text area
+export const surveyTextArea =
+  "Your feedback is important to us! Please tell us how we can do better next time.";
+// Submit button
+export const submitButton = "Submit";
+
 const servicesPageTexts = [
   insuredSnack,
   showing,
@@ -113,6 +147,27 @@ const servicesPageTexts = [
   close,
   previous,
   next,
+  halfRating,
+  oneRating,
+  oneHalfRating,
+  twoRating,
+  twoHalfRating,
+  threeRating,
+  threeHalfRating,
+  fourRating,
+  fourHalfRating,
+  fiveRating,
+  surveyTitle,
+  surveyRating,
+  ableToFindQuestion,
+  ableToFindAnswer1,
+  ableToFindAnswer2,
+  ableToFindAnswer3,
+  wouldRecommendQuestion,
+  wouldRecommendAnswer1,
+  wouldRecommendAnswer2,
+  surveyTextArea,
+  submitButton,
 ];
 
 // About Us Page Section

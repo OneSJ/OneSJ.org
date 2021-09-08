@@ -3,10 +3,13 @@ import axios from "axios";
 // Define any constants that might be needed throughout the app
 
 // Services API Link
-export const servicesapiLink = process.env.REACT_APP_SERVICES_API_LINK;
+const servicesapiLink = process.env.REACT_APP_SERVICES_API_LINK;
 
 // Categories API Link
-export const categoriesapiLink = process.env.REACT_APP_CATEGORIES_API_LINK;
+const categoriesapiLink = process.env.REACT_APP_CATEGORIES_API_LINK;
+
+// Survey API Link
+const surveyapiLink = process.env.REACT_APP_SURVEY_API_LINK;
 
 // Google API Key taken from Environment variable
 // Make sure to switch to localhost version of api key if working on the code
@@ -39,4 +42,25 @@ export async function getDataAndCategories() {
     axios.get(categoriesapiLink),
   ]);
   return [data[0].data.rows, data[1].data.rows];
+}
+
+// Sends survey data to our CartoDB
+export async function submitSurvey(
+  rating,
+  ableToFind,
+  wouldRecommend,
+  freeResponse
+) {
+  const linkWithData =
+    surveyapiLink +
+    " (" +
+    rating +
+    ", '" +
+    ableToFind +
+    "', '" +
+    wouldRecommend +
+    "', '" +
+    freeResponse +
+    "')";
+  fetch(linkWithData);
 }

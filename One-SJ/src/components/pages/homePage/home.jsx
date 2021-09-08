@@ -15,6 +15,7 @@ const Home = () => {
   // Creating refs for Snacks so they can scroll to correct part of page when clicked
   let top = createRef();
   let emergency = createRef();
+
   return (
     <>
       {/* Snacks are the pop ups that appear on the home page */}
